@@ -10,7 +10,7 @@ using WeatherClientTool.APIHelper;
 
 namespace WeatherClientTool
 {
-    internal class CityDataHelper : ICityDataHelper
+   public class CityDataHelper : ICityDataHelper
     {
         private readonly ILogger _logger;
 

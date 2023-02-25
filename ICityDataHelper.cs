@@ -7,7 +7,7 @@ using WeatherClientTool.APIHelper;
 
 namespace WeatherClientTool
 {
-    internal interface ICityDataHelper
+    public interface ICityDataHelper
     {
         public Task<List<CityData>> GetCityData();
         public  Task<string> HttpCall(string url);
