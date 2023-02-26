@@ -29,7 +29,7 @@ cities = await cityDataHelper.GetCityData();
 string cityName = string.Empty;
 while(true)
 {
-    Console.WriteLine("\nPlease Ente City Name (Enter 'Exit' for close) : ");
+    Console.WriteLine("\nPlease Enter City Name (Enter 'Exit' for close) : ");
     cityName = Console.ReadLine();
     var cityinfo = cities.Where(p => p.city.ToLower() == cityName.ToLower()).ToList();
     if (cityName == string.Empty)
