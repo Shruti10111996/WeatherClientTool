@@ -60,7 +60,7 @@ namespace WeatherClientTool
                 if (File.Exists(filePath))
                 {
                     string text = File.ReadAllText(filePath);
-                    text = text.Replace("ā", "a");
+                    text = text.Replace("ā", "a").Replace("ū", "u");
                     var cities = JsonSerializer.Deserialize<List<CityData>>(text);
                     return cities;
                 }
